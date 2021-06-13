@@ -53,11 +53,13 @@ Provide the following functionality
     2. However, if the next user with highest priority wants a read access then we grant access to all the top
     priority users in the queue that want read access till we find a user with write access.
         * For example: if there are 5 users in the waiting queue with following priorities and access requests
+        
               1. UserID 14, read access, priority = 10
               2. UserID 55, read access, priority = 7
               3. UserID 10, read access, priority = 7
               4. UserID 12, write access, priority = 6
               5. UserID 1, read access, priority = 5
+              
         * We will grant read access to top 3 users. We will remove first three users from waiting priority
         queue, grant them access to the file and keep track of their IDs.
 
@@ -66,6 +68,7 @@ Provide the following functionality
     * Print the list of the files in Hash table along with the user’s ids who are currently accessing the file and the next user
     to get the access.
           * Output should be as follows:
+          
               * H1 → File 5001 ... Access granted to User 1, read
               Next User 23, write
               Waiting 10 users
@@ -78,6 +81,7 @@ Provide the following functionality
               * H3 → File 5111 ... Access granted to none
               Next none
               Waiting none
+              
 
 5. Load the data regarding files and users from the given input file
       * Input File Format
@@ -100,10 +104,13 @@ Provide the following functionality
 * Load data
 * Insert a file
 * Delete a file
+
       1. Delete the file only if no one is currently accessing it
 * Request an access to a file by a user
+
       1. Get user id, file id and access type (read or write) and perform the desire operation
 * Release the file by a user
+
       1. Get user id and file id and perform the desire operation
 
 
