@@ -113,5 +113,5 @@ Provide the following functionality
 
       1. Get user id and file id and perform the desire operation
 
-
-
+## Execution
+Clone the project, open it in Visual Studio and run the file. For loading data from file the syntax is given above for file.
